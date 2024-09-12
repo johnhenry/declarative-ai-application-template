@@ -15,40 +15,29 @@ global.localStorage = {
   },
 };
 
-// Mock DOM elements
-global.document = {
-  getElementById: () => ({
-    addEventListener: () => {},
-    innerHTML: "",
-  }),
-  createElement: () => ({
-    innerHTML: "",
-    addEventListener: () => {},
-  }),
-  addEventListener: () => {},
-};
-
 // Import the functions to test
-require("./script.js");
+const { addTodo, toggleTodo, deleteTodo, todos } = require("./script.js");
 
 test("Todo functionality", async (t) => {
   await t.test("addTodo adds a new todo", () => {
-    global.todos = [];
-    global.addTodo("Test todo");
-    assert.strictEqual(global.todos.length, 1);
-    assert.strictEqual(global.todos[0].text, "Test todo");
-    assert.strictEqual(global.todos[0].completed, false);
+    todos.length = 0; // Clear todos array
+    addTodo("Test todo");
+    assert.strictEqual(todos.length, 1);
+    assert.strictEqual(todos[0].text, "Test todo");
+    assert.strictEqual(todos[0].completed, false);
   });
 
   await t.test("toggleTodo changes completion status", () => {
-    global.todos = [{ text: "Test todo", completed: false }];
-    global.toggleTodo(0);
-    assert.strictEqual(global.todos[0].completed, true);
+    todos.length = 0; // Clear todos array
+    addTodo("Test todo");
+    toggleTodo(0);
+    assert.strictEqual(todos[0].completed, true);
   });
 
   await t.test("deleteTodo removes a todo", () => {
-    global.todos = [{ text: "Test todo", completed: false }];
-    global.deleteTodo(0);
-    assert.strictEqual(global.todos.length, 0);
+    todos.length = 0; // Clear todos array
+    addTodo("Test todo");
+    deleteTodo(0);
+    assert.strictEqual(todos.length, 0);
   });
 });
