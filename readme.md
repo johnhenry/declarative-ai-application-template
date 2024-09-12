@@ -49,6 +49,12 @@ This repository is a template for creating Declarative AI Applications. It uses 
 
    This will guide the AI to create a new branch, implement the required changes, create and update tests, and prepare the final pull request.
 
+   Or just do both in one go:
+
+   ```
+   do .github/.instruct.0.md then do .github/.instruct.1.md
+   ```
+
 6. **Review and Iterate**
 
    Review the AI's output, make any necessary adjustments, and iterate as needed. You can continue to use the `.instruct.md` files to guide the AI through additional changes or refinements.
