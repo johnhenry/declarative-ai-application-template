@@ -8,6 +8,19 @@ This repository is a template for creating Declarative AI Applications. It uses 
 - `.github/.instruct.0.md`: Instructions for creating a draft pull request.
 - `.github/.instruct.1.md`: Instructions for creating and fulfilling pull requests based on `.github/.task.md` and `.github/.pr.md`.
 
+## Timer Application
+
+This repository now includes a timer application built using HTML, CSS, and JavaScript. The timer application provides the following features:
+
+- Set custom timer duration (hours, minutes, seconds)
+- Start, pause, and reset functionality
+- Visual display of remaining time
+- Keyboard shortcuts for easy control (s: start, p: pause, r: reset)
+- Accessibility features including ARIA labels
+- Responsive design for various screen sizes
+
+To use the timer application, open the `index.html` file in a web browser.
+
 ## How to Use This Template
 
 1. **Clone the Repository**
@@ -58,3 +71,20 @@ This repository is a template for creating Declarative AI Applications. It uses 
    Once you're satisfied with the changes and the pull request is ready, the AI will automatically clean up the temporary files (`.github/.task.md`, `.github/.pr.md`, and `.github/.instruct.*.md`) before the final push.
 
 By following these steps, you can leverage AI to help build your application in a declarative manner, using the templates and instructions provided in this repository.
+
+## Running Tests
+
+To run the unit tests for the timer application, you'll need to have Node.js and Jest installed. Follow these steps:
+
+1. Install Jest:
+
+   ```
+   npm install --save-dev jest
+   ```
+
+2. Run the tests:
+   ```
+   npx jest test.js
+   ```
+
+This will run the unit tests defined in the `test.js` file, which cover the main functionality of the timer application.
