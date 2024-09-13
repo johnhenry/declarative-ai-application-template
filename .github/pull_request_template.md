@@ -1,29 +1,49 @@
-# <!-- Add your PR title here -->
+# Pull Request
 
 ## Description
 
-<!-- Provide a clear and concise description of what the pull request is intended to accomplish. -->
-
-- Explain the goal of the pull request
-- Why is this change necessary?
-- Any relevant background context or design decisions?
+Create a modern action RPG video game that is a cross between Snake and The Legend of Zelda.
 
 ## Tasks
 
-<!-- List all tasks to be accomplished for this PR, including updating tests. -->
+- [ ] Plan game concept and mechanics
+- [ ] Design game graphics and levels
+- [ ] Develop core game engine
+- [ ] Implement game mechanics
+- [ ] Integrate sound and music
+- [ ] Test gameplay and functionality
+- [ ] Update or create tests for the changes
+- [ ] Ensure all tests pass
+- [ ] Update documentation if necessary
 
-- [ ] Update tests
+## Implementation Details
 
-## Screenshots (if applicable)
+[Provide a more detailed explanation of how the changes were implemented. Include any important design decisions or trade-offs made.]
 
-<!-- Include any visual examples that help explain what has changed. -->
+## Tests
+
+[Describe the tests that were created/updated to verify your changes. Include information on how to run the tests and what they cover.]
+
+## Visual Confirmation
+
+[If applicable, add screenshots or GIFs of UI changes.]
 
 ## Related Issues
 
-<!-- Link to related issue(s) if applicable, otherwise remove this section. -->
-
-Fixes # <!-- Example: Fixes #123 -->
+[If this PR addresses any issues, reference them here. Example: `Fixes #123`]
 
 ## Notes for Reviewers
 
-<!-- Include any additional notes for the reviewers, things to keep in mind, or areas to pay extra attention to. -->
+[Add any specific notes or instructions for the reviewers. Highlight areas that may need extra attention or explanation.]
+
+## Checklist
+
+- [ ] Code follows the project's style guide
+- [ ] Changes are thoroughly tested
+- [ ] Documentation has been updated (if necessary)
+- [ ] No new warnings or errors introduced
+- [ ] Code is ready for review and merge
+
+## Additional Context
+
+[Add any additional context or information that might be helpful for understanding and reviewing this PR.]
