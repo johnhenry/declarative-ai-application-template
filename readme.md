@@ -6,61 +6,80 @@ This repository is a template for creating Declarative AI Applications. It uses 
 
 - `.github/.pr.md`: The main template file for your pull request description.
 - `.github/.instruct.0.md`: Instructions for creating a draft pull request.
-- `.github/.instruct.1.md`: Instructions for creating and fulfilling pull requests based on `.github/.task.md` and `.github/.pr.md`.
+- `.github/.instruct.1.md`: Instructions for creating and fulfilling pull requests based on `.github/.task.md` and `.pr.md`.
+- `.github/.task.md`: Add specific tasks and requirements for your application.
+- `.github/.style.md`: Style guide for consistent code style and conventions.
 
 ## How to Use This Template
 
-1. **Clone the Repository**
+### Step 1: Clone the Repository
 
-   ```shell
-   git clone git@github.com:johnhenry/declarative-ai-application-template.git
-   cd declarative-ai-application-template
-   ```
+```shell
+git clone git@github.com:johnhenry/declarative-ai-application-template.git
+cd declarative-ai-application-template
+```
 
-2. **Remove This README** (Optional, but recommended)
+### Step 2: Install Dependencies
 
-   ```shell
-   rm -rf README.md
-   ```
+Make sure you have Node.js and npm installed, then run:
 
-3. **Prepare Your Application Description**
+```shell
+npm install
+```
 
-   Edit the `.github/.pr.md` file to describe the application you want to build. This file will serve as the template for your pull request.
+### Step 3: Prepare Your Application Description
 
-4. **Create Your Task File**
+Edit the `.github/.pr.md` file to describe the application you want to build. This file will serve as the template for your pull request.
 
-   Create a `.github/.task.md` file in the root of the repository. This file should contain the specific tasks and requirements for your application.
+### Step 4: Create Your Task File
 
-5. **Instruct Your AI**
+Create a `.github/.task.md` file in the root of the repository. This file should contain the specific tasks and requirements for your application.
 
-   Use your preferred AI tool (e.g., Claude AI) and instruct it to follow the instructions in the `.github/.instruct.md` files. You can do this by typing:
+### Step 5: Instruct Your AI
 
-   ```
-   do .github/.instruct.0.md
-   ```
+Use your preferred AI tool (e.g., Claude AI) and instruct it to follow the instructions in the `.github/.instruct.md` files. You can do this by typing:
 
-   This will guide the AI to create a draft pull request based on your `.pr.md` template.
+```
+do .github/.instruct.0.md
+```
 
-   After the draft is created, you can then instruct the AI to implement the changes by typing:
+This will guide the AI to create a draft pull request based on your `.pr.md` template.
 
-   ```
-   do .github/.instruct.1.md
-   ```
+After the draft is created, you can then instruct the AI to implement the changes by typing:
 
-   This will guide the AI to create a new branch, implement the required changes, create and update tests, and prepare the final pull request.
+```
+do .github/.instruct.1.md
+```
 
-   Or just do both in one go:
+This will guide the AI to create a new branch, implement the required changes, create and update tests, and prepare the final pull request.
 
-   ```
-   do .github/.instruct.0.md then do .github/.instruct.1.md
-   ```
+Or just do both in one go:
 
-6. **Review and Iterate**
+```
+do .github/.instruct.0.md then do .github/.instruct.1.md
+```
 
-   Review the AI's output, make any necessary adjustments, and iterate as needed. You can continue to use the `.instruct.md` files to guide the AI through additional changes or refinements.
+### Step 6: Review and Iterate
 
-7. **Finalize Your Application**
+Review the AI's output, make any necessary adjustments, and iterate as needed. You can continue to use the `.instruct.md` files to guide the AI through additional changes or refinements.
 
-   Once you're satisfied with the changes and the pull request is ready, the AI will automatically clean up the temporary files (`.github/.task.md`, `.github/.pr.md`, and `.github/.instruct.*.md`) before the final push.
+### Step 7: Finalize Your Application
+
+Once you're satisfied with the changes and the pull request is ready, the AI will automatically clean up the temporary files (`.task.md`, `.pr.md`, and `.instruct.*.md`) before the final push.
 
 By following these steps, you can leverage AI to help build your application in a declarative manner, using the templates and instructions provided in this repository.
+
+## Contributing
+
+To contribute to this project, please follow the guidelines in `.github/.style.md` for code style and commit messages.
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add new feature'`)
+5. Push to the branch (`git push origin feature/your-feature`)
+6. Create a new Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
