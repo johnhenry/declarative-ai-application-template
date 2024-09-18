@@ -23,10 +23,7 @@ This repository serves as a template for creating Declarative AI Applications. I
 
 ### Step 1: Clone the Repository
 
-```shell
-git clone https://github.com/yourusername/declarative-ai-application-template.git
-cd declarative-ai-application-template
-```
+Click the "Use this template" button on [this repo's page](https://github.com/johnhenry/declarative-ai-application-template/) to create a new repository.
 
 ### Step 2: Prepare Your Application Description
 
